@@ -1,0 +1,26 @@
+<h1><%= @in_grid %></h1>
+
+<h1><%= @english %></h1>
+
+
+<!-- <h1>You scored <%= @points %> points!</h1>
+ -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="results">
+        <h2>Your word: "<%= @word %>"</h2>
+        <h2>Your score: <%= @points %></h2>
+        <h2>Time taken: <%= @finish %> seconds</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+    </div>
+  </div>
+</div>
+
+<%= link_to("Try Again", "/new", class: "btn btn-primary") %>
